@@ -1,0 +1,10 @@
+[
+  {
+    "text": "Recorded response ready.",
+    "tool_calls": [],
+    "finish_reason": "stop",
+    "model": "recorded-fixture",
+    "usage": {"input_tokens": 0, "output_tokens": 0},
+    "mode": "recorded"
+  }
+]
