@@ -17,7 +17,7 @@ A local model and a coding agent are not required.
 ## Setup
 
 ```bash
-git clone YOUR-COURSE-REPOSITORY-URL
+git clone https://github.com/patrykbart/llm-vlm-agents-course-template.git
 cd llm-vlm-agents-course-template
 uv sync
 cp .env.example .env
