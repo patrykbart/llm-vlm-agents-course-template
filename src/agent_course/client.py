@@ -41,7 +41,10 @@ class OpenRouterClient:
             ]
         if request.response_format is not None:
             payload["response_format"] = request.response_format
-        payload["extra_body"] = {"usage": {"include": True}}
+        extra_body: dict[str, Any] = {"usage": {"include": True}}
+        if request.reasoning_effort is not None:
+            extra_body["reasoning"] = {"effort": request.reasoning_effort}
+        payload["extra_body"] = extra_body
 
         started = time.perf_counter()
         completion = self._client.chat.completions.create(**payload)

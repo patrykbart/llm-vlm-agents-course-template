@@ -15,6 +15,9 @@ class ModelRequest(BaseModel):
     messages: list[dict[str, Any]]
     tools: list[ToolDefinition] = Field(default_factory=list)
     response_format: dict[str, Any] | None = None
+    reasoning_effort: (
+        Literal["none", "minimal", "low", "medium", "high", "xhigh", "max"] | None
+    ) = None
     max_output_tokens: int | None = None
     temperature: float = Field(default=0.0, ge=0.0, le=2.0)
 

@@ -35,6 +35,7 @@ def exact_answer(client: OpenRouterClient) -> tuple[bool, str]:
                     "content": "Reply with exactly COURSE_READY and nothing else.",
                 }
             ],
+            reasoning_effort="none",
             max_output_tokens=32,
         )
     )
@@ -59,6 +60,7 @@ def structured_output(client: OpenRouterClient) -> tuple[bool, str]:
                     "schema": schema,
                 },
             },
+            reasoning_effort="none",
             max_output_tokens=128,
         )
     )
@@ -93,6 +95,7 @@ def tool_call(client: OpenRouterClient) -> tuple[bool, str]:
                     },
                 )
             ],
+            reasoning_effort="none",
             max_output_tokens=128,
         )
     )
@@ -129,6 +132,7 @@ def vision(client: OpenRouterClient) -> tuple[bool, str]:
                     ],
                 }
             ],
+            reasoning_effort="none",
             max_output_tokens=32,
         )
     )

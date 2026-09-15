@@ -25,7 +25,9 @@ uv run python instructor/benchmark.py --repetitions 3
 ```
 
 The command tests exact instruction following, JSON Schema output, a typed tool
-call, and a supplied image. It writes detailed local results to
+call, and a supplied image. Reasoning is disabled so that both candidates use
+the same output budget; reasoning-enabled agent tasks are evaluated separately.
+It writes detailed local results to
 `traces/benchmark.jsonl`, which is ignored by Git. This smoke suite verifies the
 harness; expand it with the complete course evaluation set before freezing the
 model choice.
