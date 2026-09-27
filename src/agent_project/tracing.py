@@ -1,4 +1,4 @@
-"""Append-only JSON Lines traces with basic secret redaction."""
+"""Small JSON Lines trace helper with basic secret redaction."""
 
 import json
 from datetime import UTC, datetime
