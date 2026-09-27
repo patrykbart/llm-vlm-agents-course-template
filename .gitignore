@@ -9,5 +9,6 @@ htmlcov/
 dist/
 build/
 *.egg-info/
-traces/*.jsonl
+traces/*
 !traces/.gitkeep
+.cache/
