@@ -18,17 +18,11 @@ uv run pytest
 Add the individual OpenRouter key supplied by the instructor to `.env`. Never
 commit this file or place the key in code, traces, issues, or reports.
 
-## Coding-Agent Workflow
+## Coding Agent
 
-Use Codex or Claude Code if you already have working access. Otherwise install
-the course's no-cost Antigravity CLI fallback before Meeting 1. Follow the
-coding-agent setup and workflow published on the course website.
-
-Before editing, ask the coding agent to inspect this `README.md`,
-`pyproject.toml`, and `tests/`, explain the validation commands, and propose a
-small first slice without changing files. During implementation, review every
-diff and run the checks below. Record concise evidence in
-[`docs/agent-use.md`](docs/agent-use.md); do not submit full chat transcripts.
+If you already use Codex or Claude Code, nothing else is required. Otherwise,
+install [Antigravity CLI](https://antigravity.google/docs/cli/install/) before
+Meeting 1.
 
 ## Project Brief
 
@@ -57,7 +51,6 @@ The repository contains only:
   `image_part(path)` adds an image to a message;
 - `src/agent_project/tracing.py` — a JSON Lines trace helper;
 - `tests/test_setup.py` — setup checks;
-- `docs/agent-use.md` — concise evidence of the required coding-agent workflow;
 - `data/` — approved project data;
 - `traces/` — generated traces, ignored by Git; and
 - `evidence/` — the traces and results you submit.
